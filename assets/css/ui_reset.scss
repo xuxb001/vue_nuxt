@@ -1,0 +1,452 @@
+.__Collector {
+    transition: all 0.2s;
+
+    &.el-button,
+    &.el-button:focus,
+    &.el-button:hover,
+    &.el-button:active,
+    &.el-button.is-disabled,
+    &.el-button.is-disabled:focus,
+    &.el-button.is-disabled:hover {
+        font-size: 18.543px;
+        color: #FFFFFF;
+        font-family: SUPER-BOOM;
+        background-image: url("https://archloot.com/static/images/prod/goblin_collector/BUTTON.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        max-width: 315px;
+    }
+
+    //&.el-button:active {
+    //    background-image: url("https://archloot.com/static/images/prod/pass/connect-button-active.svg");
+    //}
+
+    &.el-button.is-loading:before {
+        background-color: transparent;
+    }
+}
+
+.__mint {
+    transition: all 0.2s;
+
+    &.el-button,
+    &.el-button:focus,
+    &.el-button:hover,
+    &.el-button.is-disabled,
+    &.el-button.is-disabled:focus,
+    &.el-button.is-disabled:hover {
+        width: 320px;
+        height: 54px;
+        background-image: url("https://archloot.com/static/images/prod/pass/connect-button.svg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 25px;
+        font-family: RobotoSlab-Black;
+        margin: 0 auto;
+        letter-spacing: 0.075em;
+        color: #FFFFFF;
+    }
+
+    &.el-button:active {
+        background-image: url("https://archloot.com/static/images/prod/pass/connect-button-active.svg");
+    }
+
+    &.el-button.is-loading:before {
+        background-color: transparent;
+    }
+}
+
+.__open {
+    transition: all 0.2s;
+
+    &.el-button,
+    &.el-button:focus,
+    &.el-button:hover,
+    &.el-button.is-disabled,
+    &.el-button.is-disabled:focus,
+    &.el-button.is-disabled:hover {
+        background-image: url('https://archloot.com/static/images/prod/blindBox/button-bg1.svg');
+        background-repeat: repeat;
+        background-size: 100% 100%;
+        min-width: 171px;
+        max-width: 210px;
+        height: 49px;
+        background-color: transparent;
+        color: #ffffff;
+        border: none;
+        font-family: roboto-BoldItalic;
+        font-size: 18px;
+    }
+
+    &.el-button.is-loading:before {
+        background-color: transparent;
+    }
+}
+
+.__append {
+    transition: all 0.2s;
+
+    &.el-button,
+    &.el-button:focus,
+    &.el-button:hover,
+    &.el-button.is-disabled,
+    &.el-button.is-disabled:focus,
+    &.el-button.is-disabled:hover {
+        font-family: RobotoSlab-Regular;
+        color: #ffffff;
+        border: none;
+        border-radius: 0;
+        background: url('https://archloot.com/static/images/prod/footer/sub-btn.png') no-repeat;
+        background-size: 100% 100%;
+        font-size: 13px;
+        height: 41px;
+    }
+}
+
+input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+input::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.__form {
+    .__email {
+        position: relative;
+
+        .__append {
+            position: absolute;
+            right: -1px;
+            top: 0;
+        }
+    }
+
+    .el-input__inner {
+        width: 270px;
+        background: #E0BF8C;
+        border: 1px solid #835325;
+        border-radius: 4px;
+    }
+
+    .el-form-item__error {
+        display: none;
+    }
+}
+
+
+.__select {
+    .el-input__inner {
+        background: transparent;
+        border: none;
+        color: #ffffff;
+    }
+}
+
+
+.__el-drawer {
+    .el-drawer {
+        background: rgba(0, 0, 0, 0.8);
+
+    }
+
+    .drawer-body {
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        .drawer-header {
+            height: 65px;
+            width: 100%;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            .close-view {
+                position: absolute;
+                top: 10px;
+                right: 20px;;
+                width: 45px;
+                height: 45px;
+                cursor: pointer;
+                z-index: 200;
+            }
+        }
+    }
+}
+
+.__notify {
+    &.el-notification {
+        background: #1C1F25;
+        border-radius: 8px;
+        border: none;
+        padding: 14px 0 0 0;
+    }
+
+    .el-notification__closeBtn {
+        width: 164px;
+        height: 54px;
+        right: 0;
+        bottom: 0;
+        top: auto;
+    }
+
+    .el-icon-close:before {
+        content: ' ';
+    }
+
+    .el-notification__group {
+        width: 100%;
+        margin: 0;
+    }
+
+    .status {
+        text-align: center;
+        letter-spacing: 0.01em;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-family: RobotoSlab-Medium;
+    }
+
+    .advanturer-pass {
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        font-size: 12px;
+        color: #FFFFFF;
+        font-family: RobotoSlab-Regular;
+        padding: 5px 0 20px 0;
+    }
+
+    .notify_footer {
+        display: flex;
+        flex-direction: row;
+        height: 55px;
+        border-top: 0.6px solid rgba(91, 99, 114, .6);
+
+        div {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.01em;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            font-family: RobotoSlab-Medium;
+            cursor: pointer;
+
+            a {
+                color: #FFFFFF;
+            }
+        }
+
+        .view-detail {
+            border-right: 0.6px solid rgba(91, 99, 114, .6);
+        }
+
+        .close {
+
+        }
+    }
+
+    .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0 10px 0;
+    }
+
+    .loader {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #21CE6D;
+        transition: 0.5s;
+    }
+
+    .check {
+        &.loader {
+            background-color: #21CE6D;
+        }
+
+        &.loader::before {
+            border: 2px solid #14161B;
+            border-left-width: 0;
+            border-bottom-width: 0;
+        }
+
+    }
+
+    .loader.loading {
+        animation: animate_rotate 1s linear infinite both;
+        border-color: #34495c;
+        border-left-color: #21CE6D;
+    }
+
+    @keyframes animate_rotate {
+        0% {
+            transform: rotate(0deg);
+            border-left-color: #21CE6D;
+        }
+        25% {
+            border-left-color: #21CE6D;
+        }
+        50% {
+            border-left-color: #21CE6D;
+        }
+        75% {
+            border-left-color: #21CE6D;
+        }
+        100% {
+            transform: rotate(360deg);
+            border-left-color: #21CE6D;
+        }
+    }
+
+    .loader::before {
+        position: absolute;
+        content: '';
+        top: 44%;
+        left: 50%;
+        border: 1px solid #21CE6D;
+        border-left-width: 0;
+        border-bottom-width: 0;
+        transform: scaleX(-1) rotate(135deg) translateX(-50%) translateY(-50%);
+        transform-origin: left top;
+        display: none;
+    }
+
+    .loader.check::before {
+        display: block;
+        animation: animate_check 1s linear 1 both;
+    }
+
+    @keyframes animate_check {
+        0% {
+            width: 0;
+            height: 0;
+        }
+        33% {
+            width: 6px;
+            height: 0;
+        }
+        100% {
+            width: 4px;
+            height: 8px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .__form {
+        .el-input__inner {
+            width: 220px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .__form {
+        .el-input__inner {
+            width: 210px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .__form {
+        .el-input__inner {
+            width: 230px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .__form {
+        .el-input__inner {
+            width: 270px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .__form {
+        .el-input__inner {
+            width: 270px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .__form {
+        .el-input__inner {
+            width: 270px;
+        }
+
+    }
+}
+
+
+.__el_dialog {
+    background: rgba(0, 0, 0, 0.8);
+
+    .el-dialog {
+        width: 100%;
+        background: transparent;
+    }
+
+    .el-dialog__body {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.__swiper-pagination {
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-size: 100% 100%;
+        display: block;
+        background-image: url("~/assets/images/home/my-bullet.png");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        margin: 0 3px;
+        cursor: pointer;
+
+        &.swiper-pagination-bullet-active {
+            width: 13px;
+            height: 13px;
+        }
+        .swiper-pagination-fraction,
+        .swiper-pagination-custom,
+        .swiper-container-horizontal > .swiper-pagination-bullets{
+            bottom:0;
+        }
+    }
+
+}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+https://www.archloot.com/introduce
+https://www.archloot.com/backers
+https://www.archloot.com/about
+https://www.archloot.com/open-eyes
